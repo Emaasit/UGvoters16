@@ -4,10 +4,14 @@ Title: Counts of Ugandan registered voters for the 2016 General Election
 Version: 0.1.0
 Authors@R: 'Daniel Emaasit <daniel.emaasit@gmail.com> [aut,cre]'
 Maintainer: Daniel Emaasit <daniel.emaasit@gmail.com>
-Description: Counts of Ugandan registered voters for the 2016 presidential election provided by the Electoral Commision (EC) of Uganda. This package contains the number
-        of registered voters by polling station. This data was claimed to contain atleast 20,000 "ghost voters" by members of the Ugandan media.
+Description: Counts of Ugandan registered voters for the 2016 presidential
+    election provided by the Electoral Commision (EC) of Uganda. This package
+    contains the number of registered voters by polling station. This data was
+    claimed to contain atleast 20,000 "ghost voters" by members of the Ugandan
+    media.
 Depends:
     R (>= 3.2.3)
 License: CC0
 LazyData: true
 URL: http://github.com/emaasit/UGvoters16
+RoxygenNote: 5.0.1
