@@ -26,8 +26,10 @@ library(UGvoters16)
 
 After loading the library, you can create a local data frame using the following command:
 ```{r load_data, message = FALSE, warning = FALSE}
-df <- UGvoters16
-head(df)
+df1 <- UGvoters16
+df2 <- analyzed
+head(df1)
+head(df2)
 ```
 
 ## What can you do with it?
@@ -38,9 +40,10 @@ You can explore for yourself and see why the Ugandan media claimed it has atleas
 ### How many voters are registered
 ```{r count}
 # what are the column names
-names(df)
+names(df1)
+names(df2)
 
 # count the total number of analyzed voter counts
-sum(df$ANALYZED_VOTER_COUNT)
+sum(df2$ANALYZED_VOTER_COUNT)
 ```
 
