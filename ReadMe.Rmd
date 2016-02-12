@@ -18,14 +18,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## How to use it
 Before you can use the data in R, you need to download it from Github using the following commands:
-```{r install_package, eval = FALSE, warning = FALSE}
+```{r install_package, message = FALSE, warning = FALSE}
 installed.packages("devtools")
 devtools::install_github("emaasit/UGvoters16")
 library(UGvoters16)
 ```
 
 After loading the library, you can load the data using the following command:
-```{r load_data, eval = FALSE, warning = FALSE}
+```{r load_data, message = FALSE, warning = FALSE}
 data(UGvoters16)
 ```
 
