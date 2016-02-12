@@ -20,14 +20,27 @@ knitr::opts_chunk$set(echo = FALSE)
 Before you can use the data in R, you need to download it from Github using the following commands:
 ```{r install_package, message = FALSE, warning = FALSE}
 installed.packages("devtools")
-devtools::install_github("emaasit/UGvoters16")
+devtools::install_git("git://github.com/emaasit/UGvoters16.git", branch = "master")
 library(UGvoters16)
 ```
 
-After loading the library, you can load the data using the following command:
+After loading the library, you can create a local data frame using the following command:
 ```{r load_data, message = FALSE, warning = FALSE}
-data(UGvoters16)
+df <- UGvoters16
+head(df)
 ```
 
 ## What can you do with it?
 You can explore for yourself and see why the Ugandan media claimed it has atleast 20,000 "ghost voters".
+
+## Example Analysis
+
+### How many voters are registered
+```{r count}
+# what are the column names
+names(df)
+
+# count the total number of analyzed voter counts
+sum(df$ANALYZED_VOTER_COUNT)
+```
+
