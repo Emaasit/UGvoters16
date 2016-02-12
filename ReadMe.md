@@ -11,11 +11,26 @@ How to use it
 
 Before you can use the data in R, you need to download it from Github using the following commands:
 
+``` r
+installed.packages("devtools")
+```
+
     ##      Package LibPath Version Priority Depends Imports LinkingTo Suggests
     ##      Enhances License License_is_FOSS License_restricts_use OS_type Archs
     ##      MD5sum NeedsCompilation Built
 
+``` r
+devtools::install_git("git://github.com/emaasit/UGvoters16.git", branch = "master")
+library(UGvoters16)
+```
+
 After loading the library, you can create a local data frame using the following command:
+
+``` r
+df1 <- UGvoters16
+df2 <- analyzed
+head(df1)
+```
 
     ##   SER_NO DIST_CODE DISTRICT_NAME EA_CODE       EA_NAME SCTY_CODE
     ## 1      1        01          APAC     002 KWANIA COUNTY        01
@@ -38,6 +53,10 @@ After loading the library, you can create a local data frame using the following
     ## 4           461         411             872                  872
     ## 5           386         364             750                  750
     ## 6           443         383             826                  826
+
+``` r
+head(df2)
+```
 
     ##   SER_NO DIST_CODE DISTRICT_NAME EA_CODE       EA_NAME SCTY_CODE
     ## 1      1         1          APAC       2 KWANIA COUNTY         1
@@ -71,16 +90,30 @@ Example Analysis
 
 ### How many voters are registered
 
-    ##  [1] "SER_NO"               "DIST_CODE"            "DISTRICT_NAME"       
-    ##  [4] "EA_CODE"              "EA_NAME"              "SCTY_CODE"           
-    ##  [7] "SCOUNTY_NAME"         "PAR_CODE"             "PARISH_NAME"         
-    ## [10] "PS_CODE"              "PS_NAME"              "NO_OF_FEMALES"       
-    ## [13] "NO_OF_MALES"          "EC_VOTER_COUNTS"      "ANALYZED_VOTER_COUNT"
+``` r
+# what are the column names
+names(df1)
+```
 
     ##  [1] "SER_NO"               "DIST_CODE"            "DISTRICT_NAME"       
     ##  [4] "EA_CODE"              "EA_NAME"              "SCTY_CODE"           
     ##  [7] "SCOUNTY_NAME"         "PAR_CODE"             "PARISH_NAME"         
     ## [10] "PS_CODE"              "PS_NAME"              "NO_OF_FEMALES"       
     ## [13] "NO_OF_MALES"          "EC_VOTER_COUNTS"      "ANALYZED_VOTER_COUNT"
+
+``` r
+names(df2)
+```
+
+    ##  [1] "SER_NO"               "DIST_CODE"            "DISTRICT_NAME"       
+    ##  [4] "EA_CODE"              "EA_NAME"              "SCTY_CODE"           
+    ##  [7] "SCOUNTY_NAME"         "PAR_CODE"             "PARISH_NAME"         
+    ## [10] "PS_CODE"              "PS_NAME"              "NO_OF_FEMALES"       
+    ## [13] "NO_OF_MALES"          "EC_VOTER_COUNTS"      "ANALYZED_VOTER_COUNT"
+
+``` r
+# count the total number of analyzed voter counts
+sum(df2$ANALYZED_VOTER_COUNT)
+```
 
     ## [1] 15277197
