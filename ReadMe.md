@@ -1,3 +1,5 @@
+[![Travis-CI Build Status](https://travis-ci.org/Emaasit/UGvoters16.svg?branch=master)](https://travis-ci.org/Emaasit/UGvoters16)
+
 UGvoters16
 ==========
 
