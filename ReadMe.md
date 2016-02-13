@@ -1,5 +1,3 @@
-[![Travis-CI Build Status](https://travis-ci.org/Emaasit/UGvoters16.svg?branch=master)](https://travis-ci.org/Emaasit/UGvoters16)
-
 UGvoters16
 ==========
 
@@ -35,26 +33,26 @@ head(df1)
 ```
 
     ##   SER_NO DIST_CODE DISTRICT_NAME EA_CODE       EA_NAME SCTY_CODE
-    ## 1      1        01          APAC     002 KWANIA COUNTY        01
-    ## 2      2        01          APAC     002 KWANIA COUNTY        01
-    ## 3      3        01          APAC     002 KWANIA COUNTY        01
-    ## 4      4        01          APAC     002 KWANIA COUNTY        01
-    ## 5      5        01          APAC     002 KWANIA COUNTY        01
-    ## 6      6        01          APAC     002 KWANIA COUNTY        01
+    ## 1      1         1          APAC       2 KWANIA COUNTY         1
+    ## 2      2         1          APAC       2 KWANIA COUNTY         1
+    ## 3      3         1          APAC       2 KWANIA COUNTY         1
+    ## 4      4         1          APAC       2 KWANIA COUNTY         1
+    ## 5      5         1          APAC       2 KWANIA COUNTY         1
+    ## 6      6         1          APAC       2 KWANIA COUNTY         1
     ##   SCOUNTY_NAME PAR_CODE PARISH_NAME PS_CODE             PS_NAME
-    ## 1        ADUKU       01      ADYEDA      01       ADYEDA CENTRE
-    ## 2        ADUKU       01      ADYEDA      02 APORWEGI P.7 SCHOOL
-    ## 3        ADUKU       01      ADYEDA      03        ADYEDA IMALO
-    ## 4        ADUKU       02       ALIRA      01             ALIRA B
-    ## 5        ADUKU       02       ALIRA      02             AKOT  A
-    ## 6        ADUKU       02       ALIRA      03               OLEKE
-    ##   NO_OF_FEMALES NO_OF_MALES EC_VOTER_COUNTS ANALYZED_VOTER_COUNT
-    ## 1           134         143             277                  277
-    ## 2           379         323             703                  702
-    ## 3           164         157             322                  321
-    ## 4           461         411             872                  872
-    ## 5           386         364             750                  750
-    ## 6           443         383             826                  826
+    ## 1        ADUKU        1      ADYEDA       1       ADYEDA CENTRE
+    ## 2        ADUKU        1      ADYEDA       2 APORWEGI P.7 SCHOOL
+    ## 3        ADUKU        1      ADYEDA       3        ADYEDA IMALO
+    ## 4        ADUKU        2       ALIRA       1             ALIRA B
+    ## 5        ADUKU        2       ALIRA       2             AKOT  A
+    ## 6        ADUKU        2       ALIRA       3               OLEKE
+    ##   NO_OF_FEMALES NO_OF_MALES EC_VOTER_COUNTS
+    ## 1            43          51             240
+    ## 2           312         251             687
+    ## 3            76          66             287
+    ## 4           404         349             869
+    ## 5           320         296             739
+    ## 6           384         317             819
 
 ``` r
 head(df2)
@@ -97,11 +95,11 @@ Example Analysis
 names(df1)
 ```
 
-    ##  [1] "SER_NO"               "DIST_CODE"            "DISTRICT_NAME"       
-    ##  [4] "EA_CODE"              "EA_NAME"              "SCTY_CODE"           
-    ##  [7] "SCOUNTY_NAME"         "PAR_CODE"             "PARISH_NAME"         
-    ## [10] "PS_CODE"              "PS_NAME"              "NO_OF_FEMALES"       
-    ## [13] "NO_OF_MALES"          "EC_VOTER_COUNTS"      "ANALYZED_VOTER_COUNT"
+    ##  [1] "SER_NO"          "DIST_CODE"       "DISTRICT_NAME"  
+    ##  [4] "EA_CODE"         "EA_NAME"         "SCTY_CODE"      
+    ##  [7] "SCOUNTY_NAME"    "PAR_CODE"        "PARISH_NAME"    
+    ## [10] "PS_CODE"         "PS_NAME"         "NO_OF_FEMALES"  
+    ## [13] "NO_OF_MALES"     "EC_VOTER_COUNTS"
 
 ``` r
 names(df2)

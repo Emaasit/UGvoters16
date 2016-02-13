@@ -11,8 +11,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/Emaasit/UGvoters16.svg?branch=master)](https://travis-ci.org/Emaasit/UGvoters16)
-
 # UGvoters16
 
 ## What is this?
