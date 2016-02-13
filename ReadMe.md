@@ -27,7 +27,7 @@ library(UGvoters16)
 After loading the library, you can create a local data frame using the following command:
 
 ``` r
-df1 <- UGvoters16
+df1 <- voters
 df2 <- analyzed
 head(df1)
 ```
