@@ -1,4 +1,4 @@
-#' UGvoters16.
+#' voters.
 #'
 #' Counts of Ugandan registered voters for the 2016 General Election
 #'
@@ -21,4 +21,4 @@
 #'
 #' }
 #' @source \url{http://www.ec.or.ug/}
-"UGvoters16"
+"voters"
